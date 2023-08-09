@@ -27,7 +27,7 @@ const CardSwiper = ({ propertyName, loading, setLoading }) => {
                 .catch(er => console.log(er))
         }
 
-    }, [propertyName])
+    }, [propertyName, setLoading])
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -47,12 +47,13 @@ const CardSwiper = ({ propertyName, loading, setLoading }) => {
             items: 1.5
         }
     };
+    const dots = <div className='w-4 h-4 mx-1 border-2 border-red-400 rounded-full hover:cursor-pointer'></div>
 
     return (
         <div>
             <h1 className='text-[18px]'>Top Hotels</h1>
             {
-                loading ? <Loader /> : <Carousel responsive={responsive} containerClass='custom-arrow-styles' className='py-11'>
+                loading ? <Loader /> : <Carousel responsive={responsive} showDots={true} customDot={dots} containerClass='custom-arrow-styles' className='pt-11 pb-6'>
                     {hotels.length == 0 ? <h1 className='text-xl text-blue-500 mt-5'>Sorry, not available..</h1> : hotels.map(h => <HotelCard details={h} key={h.id} className='flex justify-center' />)}
 
                 </Carousel>
