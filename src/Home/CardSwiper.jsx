@@ -7,6 +7,8 @@ import HotelCard from '../components/HotelCard';
 import Loader from '../components/Loader';
 const CardSwiper = ({ propertyName, loading, setLoading }) => {
     const [hotels, setHotels] = useState([])
+    /* The `useEffect` hook in React is used to perform side effects in functional components. In this
+    case, the `useEffect` hook is used to fetch hotel data from an API based on the `propertyName` prop. */
     useEffect(() => {
         if (propertyName) {
             fetch(`https://dev.ghuddy.link/api/v1/open/hotels?propertyType=${propertyName}`)

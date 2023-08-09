@@ -6,7 +6,7 @@ import ImageSlider from '../Home/ImageSlider/ImageSlider';
 const HotelCard = ({ details }) => {
     const { images, property_name, class_rating, short_address, property_tag, black_price, red_price } = details
     return (
-        <div className="overflow-hidden rounded-lg bg-white text-slate-500 shadow-lg shadow-slate-300 w-[252px] h-[391px] hover:shadow-slate-500 transition ease-in-out delay-100 duration-300 hover:cursor-pointer relative">
+        <div className="overflow-hidden rounded-lg bg-white text-slate-500 shadow-lg shadow-slate-300 w-[252px] h-[391px] hover:shadow-slate-500 transition ease-in-out delay-100 duration-300 hover:md:cursor-pointer relative">
             {/*  <!-- Image --> */}
             <figure>
 

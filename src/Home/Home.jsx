@@ -13,6 +13,10 @@ const Home = () => {
             .then(data => setPropertyType(data))
             .catch(er => console.log(er))
     }, [])
+    /**
+     * The function `selectedButton` is used to handle the selection of a button, updating the state
+     * variables `loading`, `id`, `isActive`, and `propertyName` accordingly.
+     */
     const selectedButton = (i, p) => {
         setLoading(true)
         if (i !== id && id !== '') {
