@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import './ImageSlider.module.css'
+
 const ImageSlider = ({ children: images }) => {
     const [current, setCurrent] = useState(0)
     const prev = () => {

@@ -35,7 +35,7 @@ const Home = () => {
     return (
         <div className='w-full'>
             <h1 className='text-[22px] font-medium'>Hotels</h1>
-            <div className='flex gap-1 md:overflow-hidden overflow-x-auto py-2'>
+            <div className='flex gap-1 md:overflow-hidden overflow-x-auto p-2'>
                 {
                     propertyType.map((p, i) => <button onClick={() => selectedButton(i, p)} key={i} className={`w-[64px] h-[61px] p-1 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300 flex flex-col justify-center items-center rounded-xl focus:outline-none ${id === i && isActive ? 'bg-[#07bc0dc7] text-white' : ''}`}>
                         <img src={p.iconUrl} className='w-5 h-5' alt="" />

@@ -17,7 +17,7 @@ const HotelCard = ({ details }) => {
             </figure>
             {/*  <!-- Body--> */}
             <div className='flex absolute top-2 justify-between w-full items-center'>
-                <div className='bg-red-500 flex items-center w-32 h-5 text-xs justify-between text-white p-1'><span className='flex gap-1'><FaBullhorn />-24% off</span>  <span className='bg-white text-red-400 rounded'>Deal!</span></div>
+                <div className='bg-red-500 flex items-center w-32 h-5 text-xs justify-between text-white p-1'><span className='flex gap-1'><FaBullhorn />-24% off</span>  <span className='bg-white text-red-500 rounded px-1'>Deal!</span></div>
                 <div><FaRegHeart className='text-white text-xl mr-2' /></div>
             </div>
             <div className="p-3">
