@@ -1,7 +1,17 @@
+.custom-arrow-styles {
+    position: relative;
+}
+
 .custom-arrow-styles button {
     outline: none;
-    background-color: black;
+    background-color: grey;
     opacity: 0.5;
+    top: 0;
+    min-width: 50px;
+    min-height: 35px;
+    height: 15px;
+    border-radius: 3px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/109/109617.png');
 }
 
 .custom-arrow-styles button:hover {

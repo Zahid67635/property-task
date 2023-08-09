@@ -51,7 +51,7 @@ const CardSwiper = ({ propertyName, loading, setLoading }) => {
         <div>
             <h1 className='text-[18px]'>Top Hotels</h1>
             {
-                loading ? <p>loading...</p> : <Carousel responsive={responsive} containerClass='custom-arrow-styles' className='py-2'>
+                loading ? <p>loading...</p> : <Carousel responsive={responsive} containerClass='custom-arrow-styles' className='py-11'>
                     {hotels.length == 0 ? <h1 className='text-xl text-blue-500 mt-5'>Sorry, not available..</h1> : hotels.map(h => <HotelCard details={h} key={h.id} className='flex justify-center' />)}
 
                 </Carousel>
