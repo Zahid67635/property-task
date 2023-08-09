@@ -3,7 +3,7 @@ import Home from './Home/Home'
 function App() {
 
   return (
-    <div className='pl-4 pt-2'>
+    <div className='md:w-[844px] mx-auto p-2'>
       <Home />
     </div>
   )

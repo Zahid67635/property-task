@@ -1,0 +1,8 @@
+.custom-arrow button {
+    min-width: 20px;
+    min-height: 15px;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0;
+    background: gray;
+}
